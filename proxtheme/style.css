@@ -34,7 +34,13 @@ Text Domain: Prox
     font-family: "Niloofar";
     font-weight: 700;
     font-style: normal;
-    src: url("fonts/DimaNiloofar.ttf");
+    src: url("fonts/NiloofarBd.ttf");
+}
+@font-face {
+    font-family: "Niloofar";
+    font-weight: 400;
+    font-style: normal;
+    src: url("fonts/Niloofar.ttf");
 }
 
 .Niloofar {
@@ -90,6 +96,18 @@ body {
     padding: 0px 30px;
     font-size: 23px;
     transition: all 0.3s ease;
+    line-height: 1;
+}
+.alink
+{
+    border: 2px solid #016D47;
+    color: #EFDDCE;
+    width: max-content;
+    padding: 16px 24px;
+    background-color: #016D47;
+    font-size: 23px;
+    transition: all 0.3s ease;
+    border-radius:12px;
     line-height: 1;
 }
 .mlink2 {
@@ -211,13 +229,27 @@ a:hover {
 .sc2 {
     color: #013020;
 }
-
+.sc4 
+{
+    color: #016D47;
+}
 /**************font-sizes***********/
 .fs60 {
     font-size: 60px;
 }
+.fs43 
+{
+    font-size: 43px;
+}
+.fs30 
+{
+    font-size: 30px;
+}
 .fs22 {
     font-size: 22px;
+}
+.fs25 {
+    font-size: 25px;
 }
 
 .wpcf7 input {
@@ -250,6 +282,155 @@ a:hover {
     width: 40px;
     min-width: 40px;
     background-color: transparent;
+}
+
+.fbold 
+{
+    font-weight:700;
+}
+.link1 
+{
+    width:max-content;
+    max-width:100%;
+    background-color:#EFDDCE;
+    color:#026D48;
+    border-radius:12px;
+    padding:16px 40px;
+    border:2px solid #EFDDCE;
+}
+.link2 
+{
+    width:max-content;
+    max-width:100%;
+    background-color:transparent;
+    border:2px solid #EFDDCE;
+    color:#EFDDCE;
+    border-radius:12px;
+    padding:16px 40px;
+}
+
+.mainslider .slick-dots 
+{
+    bottom:15px;
+}
+.mainslider .slick-dots li button:before
+{
+    color:transparent;
+    border-radius:50%;
+    border:2px solid #EFDDCE;
+    font-size: 16px;
+    width:16px;
+    height:16px;
+    content: "";
+}
+.mainslider .slick-dots li.slick-active button:before
+{
+    background-color:#EFDDCE;
+}
+.mainslider.slick-slider 
+{
+    margin-bottom:0!important;
+}
+.sectiontitle 
+{
+    font-size:60px;
+    font-weight:700;
+    position: relative;
+}
+
+.circle 
+{
+    position:absolute;
+    left:0;
+    transform:translateY(-50%);
+    top:50%;
+    right: -100px;
+    margin:0 auto;
+}
+.harmony-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    margin-top: 40px;
+}
+.harmony-item.center {
+    padding-top: 250px;
+}
+.harmony-item {
+    gap:20px;
+
+    text-align: right;
+    position: relative;
+}
+.itemtitle 
+{
+    max-width: 295px;
+}
+.harmony-item.center 
+{
+    text-align: center;
+}
+
+.harmony-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.lines {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 50%;
+    left: 0;
+}
+
+.lines line {
+    stroke: white;
+    stroke-width: 2;
+}
+.harmony-item.left .icon::before
+{
+    position: absolute;
+    height: 365px;
+    width: 4px;
+    background-color: #efddce;
+    content: "";
+    left: -145px;
+    transform: rotate(65deg);
+    top: -9px;
+
+}
+.harmony-item .icon
+{
+    position: relative;
+    z-index: 1000;
+}
+.harmony-item.right .icon::before
+{
+    position: absolute;
+    height: 272px;
+    width: 4px;
+    background-color: #efddce;
+    content: "";
+    right: -122px;
+    transform: rotate(290deg);
+    top: 15%;
+    z-index: 0;
+}
+.highlighted-word
+{
+    transition:all 0.3s ease;
+}
+.highlighted-word:hover 
+{
+    color:#fff;
+    padding:0 45px;
+    transform: scale(1.5);
+}
+.sectionPadding 
+{
+    padding:180px 0;
 }
 /******************************************************front end********************************************************/
 .hidden-xs-up {

@@ -1,3 +1,4 @@
+</div>
 <footer class="" style="background-color:#013020;">
 	<div class="container c16 py-5">
 		<div class="row justify-content-between">
@@ -48,6 +49,28 @@
 </footer>
 
 <?php wp_footer(); ?>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/slick.min.js"></script>
+<script>
+	jQuery(document).ready(function() {
+		// jQuery('#mobMenu').on('click', function() {
+		// 	jQuery('#HeaderNav').toggleClass('active');
+		// });
+		jQuery('.mainslider').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			dots: true,
+			fade: true,
+			rtl: true,
+			autoplaySpeed: 3000,
+			arrows: true,
+			autoplay: true,
+			speed: 500,
+
+		});
+
+	});
+</script>
 </body>
 
 </html>
