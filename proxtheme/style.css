@@ -343,7 +343,7 @@ a:hover {
     position:absolute;
     left:0;
     transform:translateY(-50%);
-    top:50%;
+    top:25%;
     right: -100px;
     margin:0 auto;
 }
